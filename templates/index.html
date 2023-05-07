@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Polling Unit Result</title>
+</head>
+<body>
+    {% for unit in all_unit %}
+  <h1>Polling Unit Result: {{ unit.name }}</h1>
+  <p>APC: {{ unit.APC }}</p>
+  <p>PDP: {{ unit.PDP }}</p>
+  <p>LP: {{ unit.LP }}</p>
+  <p>Others: {{ unit.others }}</p>
+  <p>Total Votes: {{ unit.total_votes }}</p>
+  {% endfor %}
+</body>
+</html>
